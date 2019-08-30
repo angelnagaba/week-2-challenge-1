@@ -1,0 +1,9 @@
+body {
+    border: #000000;
+}
+
+p {
+    text-align: center;
+    font-size: 70px;
+    padding-top: -500%;
+}

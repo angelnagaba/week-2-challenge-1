@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <link rel="stylesheet" href="challenge1_part1.css">
+    <title>
+
+    </title>
+
+</head>
+
+<body style="background-color:floralwhite">
+    <p id="demo" style="border:3px; border-style:solid; border-color:black; padding: 5em;">
+        <script type="text/javascript">
+            var name = window.prompt("Please enter your name")
+            var YearOfBirth = prompt("Please enter your year of birth");
+            var today = new Date();
+            var year = today.getFullYear();
+            var age = year - YearOfBirth;
+
+            if (age < 18) {
+                document.getElementById("demo").innerHTML = "Hello" + " " + name + " " + "you are a minor"
+            } else if (age >= 18 && age <= 36) {
+                document.getElementById("demo").innerHTML = "Hello" + " " + " " + name + " " + " " + "you are a youth"
+            } else {
+                document.getElementById("demo").innerHTML = "Hello" + " " + name + " " + "you are an elder"
+            }
+        </script>
+    </p>
+</body>
+
+</html>
